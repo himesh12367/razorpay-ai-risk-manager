@@ -1,55 +1,70 @@
 # 💳 Razorpay AI Risk Manager
+![Razorpay AI Risk Manager](screenshots/risk-manager.png)
 
 ## AI-Based Fraud Transaction Detection System
 
+## 📌 Project Overview
+
 Razorpay AI Risk Manager is a machine learning-based web application designed to detect potentially fraudulent financial transactions.
 
-The system takes transaction details from the user, performs feature engineering, and uses a trained machine learning model to predict whether the transaction is **NORMAL** or **FRAUD**.
+The system accepts transaction details from the user, performs feature engineering, and uses a trained machine learning classification model to predict whether a transaction is **NORMAL** or **FRAUD**.
 
-The application also calculates a **fraud probability** and assigns a **LOW, MEDIUM, or HIGH** risk level.
+The application also calculates the fraud probability and assigns a corresponding risk level:
 
----
+- 🟢 **LOW**
+- 🟡 **MEDIUM**
+- 🔴 **HIGH**
 
-## 🚀 Project Overview
-
-Financial fraud detection is an important problem in digital payment systems.
-
-This project demonstrates how machine learning can be used to analyze transaction characteristics and identify potentially suspicious transactions.
-
-The application provides a simple web interface where users can enter transaction information and immediately receive a risk assessment.
+The project demonstrates the practical application of Artificial Intelligence and Machine Learning to financial transaction risk analysis.
 
 ---
 
 ## ✨ Features
 
-- 🤖 Machine learning-based fraud detection
+- 🤖 AI/ML-based fraud detection
 - 🔍 Transaction risk analysis
 - 📊 Fraud probability calculation
 - 🚨 LOW / MEDIUM / HIGH risk classification
-- 🌐 Flask web application
-- 💻 User-friendly transaction input form
+- 🌐 Flask-based web application
+- 🧠 Machine learning classification model
 - ⚙️ Feature engineering
-- 📈 Model prediction
-- 🧠 Random Forest-based classification
-- 🐍 Python implementation
+- 💻 Simple and user-friendly interface
+- 🔐 Financial transaction risk assessment
+- 📈 Model-based prediction
 
 ---
 
 ## 🔄 System Workflow
 
 ```text
-User enters transaction details
-              ↓
-       Flask Web Application
-              ↓
-       Input Processing
-              ↓
-       Feature Engineering
-              ↓
-    Trained ML Classification Model
-              ↓
+                User
+                  │
+                  ▼
+       Enter Transaction Details
+                  │
+                  ▼
+        Flask Web Application
+                  │
+                  ▼
+          Input Processing
+                  │
+                  ▼
+        Feature Engineering
+                  │
+                  ▼
+       Trained ML Model
+                  │
+                  ▼
        Fraud Probability
-              ↓
-         Risk Assessment
-              ↓
-     NORMAL / FRAUD Result
+                  │
+                  ▼
+          Risk Assessment
+                  │
+                  ▼
+       ┌──────────┴──────────┐
+       │                     │
+    NORMAL                 FRAUD
+       │                     │
+       └──────────┬──────────┘
+                  ▼
+        Display Result
