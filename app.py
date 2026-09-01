@@ -2,6 +2,7 @@ from flask import Flask, request, render_template_string
 import joblib
 import numpy as np
 import os
+import pandas as pd
 
 app = Flask(__name__)
 
@@ -35,7 +36,18 @@ TYPE_MAPPING = {
 # ============================================================
 # CREATE FEATURES
 # ============================================================
-
+FEATURE_NAMES = [
+    "step",
+    "type",
+    "amount",
+    "oldbalanceOrg",
+    "oldbalanceDest",
+    "amount_to_origin_balance",
+    "amount_to_destination_balance",
+    "origin_balance_zero",
+    "destination_balance_zero",
+    "log_amount"
+]
 def create_features(
     step,
     transaction_type,
@@ -83,7 +95,7 @@ def create_features(
         log_amount
     ]
 
-    return np.array(features).reshape(1, -1)
+    return pd.DataFrame([features], columns=FEATURE_NAMES)
 
 
 # ============================================================
