@@ -91,3 +91,6 @@ The final prediction includes:
           └───────┬────────┘
                   ▼
              Display Result
+### 🏗️ System Architecture
+
+![Razorpay AI Risk Manager System Architecture](screenshots/architecture-blue.png)
