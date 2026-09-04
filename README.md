@@ -1,6 +1,14 @@
 # 💳 Razorpay AI Risk Manager
 
 ![Razorpay AI Risk Manager](screenshots/risk-manager.png)
+## 🛠️ Tech Stack
+
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
+![Flask](https://img.shields.io/badge/Flask-Web%20Framework-black?logo=flask)
+![Scikit--learn](https://img.shields.io/badge/Scikit--learn-Machine%20Learning-orange?logo=scikit-learn)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Processing-purple?logo=pandas)
+![NumPy](https://img.shields.io/badge/NumPy-Numerical%20Computing-blue?logo=numpy)
+![GitHub](https://img.shields.io/badge/GitHub-Version%20Control-black?logo=github)
 
 ## 🤖 AI-Based Fraud Transaction Detection System
 
