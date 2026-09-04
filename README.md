@@ -93,4 +93,9 @@ The final prediction includes:
              Display Result
 ### 🏗️ System Architecture
 
+That **three-backtick line closes the workflow code block**.
+
+Also, remove the backslashes before `###` and `(`. Your final image line should be:
+
+```markdown
 ![Razorpay AI Risk Manager System Architecture](screenshots/architecture-blue.png)
