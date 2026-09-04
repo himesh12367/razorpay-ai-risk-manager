@@ -84,13 +84,15 @@ The final prediction includes:
                   ▼
            Risk Assessment
                   │
-          ┌───────┴────────┐
-          ▼                ▼
-       NORMAL            FRAUD
-          │                │
-          └───────┬────────┘
-                  ▼
-             Display Result
+         ┌───────┴────────┐
+         ▼                ▼
+      NORMAL            FRAUD
+         │                │
+         └───────┬────────┘
+                 ▼
+            Display Result
+```
+
 ### 🏗️ System Architecture
 
 ![Razorpay AI Risk Manager System Architecture](screenshots/architecture-blue.png)
