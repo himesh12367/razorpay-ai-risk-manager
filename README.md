@@ -1,21 +1,44 @@
 # 💳 Razorpay AI Risk Manager
+
 ![Razorpay AI Risk Manager](screenshots/risk-manager.png)
 
-## AI-Based Fraud Transaction Detection System
+## 🤖 AI-Based Fraud Transaction Detection System
+
+Razorpay AI Risk Manager is a machine learning-powered web application designed to detect potentially fraudulent financial transactions.
+
+The application accepts transaction details, performs feature engineering, and uses a trained Random Forest classification model to predict whether a transaction is **NORMAL** or **FRAUD**.
+
+It also calculates a fraud probability and assigns a corresponding risk level:
+
+- 🟢 **LOW** — Low Risk
+- 🟡 **MEDIUM** — Medium Risk
+- 🔴 **HIGH** — High Risk
+
+---
+
+## 🌐 Live Demo
+
+🚀 **Try the application:**  
+https://razorpay-ai-risk-manager-f081.onrender.com
+
+> Note: The application is hosted on Render's free tier, so the first request after inactivity may take some time to load.
+
+---
 
 ## 📌 Project Overview
 
-Razorpay AI Risk Manager is a machine learning-based web application designed to detect potentially fraudulent financial transactions.
+Financial fraud detection is an important problem in digital payment systems.
 
-The system accepts transaction details from the user, performs feature engineering, and uses a trained machine learning classification model to predict whether a transaction is **NORMAL** or **FRAUD**.
+This project demonstrates how Artificial Intelligence and Machine Learning can be used to analyze transaction patterns and identify potentially fraudulent transactions.
 
-The application also calculates the fraud probability and assigns a corresponding risk level:
+The system processes transaction information, generates additional features, and passes the processed data to a trained machine learning model.
 
-- 🟢 **LOW**
-- 🟡 **MEDIUM**
-- 🔴 **HIGH**
+The final prediction includes:
 
-The project demonstrates the practical application of Artificial Intelligence and Machine Learning to financial transaction risk analysis.
+- Fraud / Normal classification
+- Fraud probability
+- Risk level
+- Transaction risk assessment
 
 ---
 
@@ -26,11 +49,11 @@ The project demonstrates the practical application of Artificial Intelligence an
 - 📊 Fraud probability calculation
 - 🚨 LOW / MEDIUM / HIGH risk classification
 - 🌐 Flask-based web application
-- 🧠 Machine learning classification model
+- 🧠 Random Forest machine learning model
 - ⚙️ Feature engineering
-- 💻 Simple and user-friendly interface
-- 🔐 Financial transaction risk assessment
+- 💻 User-friendly web interface
 - 📈 Model-based prediction
+- 🔐 Financial transaction risk assessment
 
 ---
 
@@ -40,31 +63,31 @@ The project demonstrates the practical application of Artificial Intelligence an
                 User
                   │
                   ▼
-       Enter Transaction Details
+        Enter Transaction Details
                   │
                   ▼
-        Flask Web Application
+         Flask Web Application
                   │
                   ▼
-          Input Processing
+           Input Processing
                   │
                   ▼
-        Feature Engineering
+          Feature Engineering
                   │
                   ▼
-       Trained ML Model
+        Trained Random Forest
+             ML Model
                   │
                   ▼
-       Fraud Probability
+          Fraud Probability
                   │
                   ▼
-          Risk Assessment
+           Risk Assessment
                   │
+          ┌───────┴────────┐
+          ▼                ▼
+       NORMAL            FRAUD
+          │                │
+          └───────┬────────┘
                   ▼
-       ┌──────────┴──────────┐
-       │                     │
-    NORMAL                 FRAUD
-       │                     │
-       └──────────┬──────────┘
-                  ▼
-        Display Result
+             Display Result
